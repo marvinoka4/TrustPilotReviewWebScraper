@@ -19,7 +19,7 @@ pages = np.arange(1, 80, 1)
 
 # Create a loop to go over the reviews
 for page in pages:
-    page = requests.get("https://uk.trustpilot.com/review/car.co.uk" + "?page=" + str(page))
+    page = requests.get("<insert url here>" + "?page=" + str(page))
 
     soup = BeautifulSoup(page.text, "html.parser")
     # Set the tag we wish to start at
